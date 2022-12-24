@@ -11,17 +11,17 @@ I have been working in the IT field for over ten years. Worked in large teams wi
 - JavaScript Basics
 - Windows OS
 ## Code example:
-     
-     const chai = require("chai");
-     const assert = chai.assert;
-     chai.config.truncateThreshold=0;
+```     
+    const chai = require("chai");
+    const assert = chai.assert;
+    chai.config.truncateThreshold=0;
 
-     describe("Tests", function() {
-       it ("Basic tests", function() {
-       assert.strictEqual(repeatStr(3, "*"), "***");
-       assert.strictEqual(repeatStr(5, "#"), "#####");
-       assert.strictEqual(repeatStr(2, "ha "), "ha ha ");
-
+    describe("Tests", function() {
+      it ("Basic tests", function() {
+      assert.strictEqual(repeatStr(3, "*"), "***");
+      assert.strictEqual(repeatStr(5, "#"), "#####");
+      assert.strictEqual(repeatStr(2, "ha "), "ha ha ");
+```
 ## Courses:
 - Free HTML course: teaching html layout for beginners
 - Free CSS Course: Online Learning from Scratch
