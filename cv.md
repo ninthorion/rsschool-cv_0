@@ -1,6 +1,6 @@
 # Sluzhaev Dmitrii
 ## Contacts:
-- ### Phone: +7 951 677 3726
+- ### Phone: +7 951 677 372+
 - ### E-mail: downofgit@gmail.com
 - ### Discord: onego#7830
 ## About myself:
@@ -13,7 +13,7 @@ I have been working in the IT field for over ten years. Worked in large teams wi
 ## Code example:
 ```     
     const chai = require("chai");
-    const assert = chai.assert;
+    const assert = chai.assert;git
     chai.config.truncateThreshold=0;
 
     describe("Tests", function() {
