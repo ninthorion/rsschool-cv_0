@@ -1,16 +1,91 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body {background-color: powderblue;}
-h1   {color: blue;}
-p    {color: red;}
-</style>
-</head>
-<body>
+@font-face {
+    font-family: Roboto;
+    src: url("assets/fonts/Roboto-Regular.ttf");
+}
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+body {
+    font-family: Roboto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-</body>
-</html>
+pre{
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    border: 1px solid red;
+}
+
+.main {
+    border: 1px solid red;
+}
+
+.footer {
+    border: 1px solid red;
+}
+
+.container { /* класс ограничивает ширину контента и центрирует его на странице по гризонтали*/
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-list{
+    display: flex; /* отображение элементов в строку*/
+    justify-content: flex-end; /*свинуть в право*/
+    align-items: center; /*выровнять по центру по высоте*/
+    list-style: none; /*убирает стандартные маркеры*/
+}
+
+.nav-link {
+    padding: 0 20px;/*отступы*/
+    line-height: 50px;/*величина пространста между строками*/
+    transition: .3s;/*плавная смена свойства*/
+    text-decoration: none; /* убирает подчеркивание ссылок*/
+}
+
+html {
+    scroll-behavior: smooth; /*плавная прокрутка страницы*/
+}
+
+.section-item a {
+    color: #829985;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.section-item a:hover {
+    color: #4d2323;
+}
+
+.main-container {
+    display: flex; /*размещает секции по горизонтали*/
+    flex-wrap: wrap; /*секции, которые не помещаются по ширине контейнера переносятся на новую строку*/
+}
+
+.section {
+    width: 50%; /*указывает, что каждая секция занимает ровно половину ширины контейнера*/
+}
+
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+
+img {
+    width: 256px;
+    height: 256px;
+}
